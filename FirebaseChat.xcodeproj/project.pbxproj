@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		39BD21122E910BE93C37EB3C /* Pods_FirebaseChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCEF953C71B571C7C9FA092 /* Pods_FirebaseChat.framework */; };
 		52038363D75308051FBA5FAC /* Pods_FirebaseChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE13610697869B6213033E90 /* Pods_FirebaseChatUITests.framework */; };
+		5F0309071F8E6111002D3A96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F0309061F8E6111002D3A96 /* GoogleService-Info.plist */; };
+		5F0309091F8E6147002D3A96 /* ChannelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0309081F8E6147002D3A96 /* ChannelTableViewController.swift */; };
+		5F03090B1F8E631D002D3A96 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F03090A1F8E631D002D3A96 /* Channel.swift */; };
+		5F03090D1F8E8670002D3A96 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F03090C1F8E8670002D3A96 /* ChatViewController.swift */; };
 		5F718F801F8E542B00E0DA7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F718F7F1F8E542B00E0DA7C /* AppDelegate.swift */; };
 		5F718F821F8E542B00E0DA7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F718F811F8E542B00E0DA7C /* ViewController.swift */; };
 		5F718F851F8E542B00E0DA7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F718F831F8E542B00E0DA7C /* Main.storyboard */; };
@@ -40,6 +44,10 @@
 		1744F75D533A7B5B647DE718 /* Pods-FirebaseChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseChatTests/Pods-FirebaseChatTests.release.xcconfig"; sourceTree = "<group>"; };
 		253024860BF1F6E96DD2DEC7 /* Pods-FirebaseChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseChatTests/Pods-FirebaseChatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		44E48993B8813BAFCE776E07 /* Pods-FirebaseChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseChat/Pods-FirebaseChat.release.xcconfig"; sourceTree = "<group>"; };
+		5F0309061F8E6111002D3A96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5F0309081F8E6147002D3A96 /* ChannelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableViewController.swift; sourceTree = "<group>"; };
+		5F03090A1F8E631D002D3A96 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		5F03090C1F8E8670002D3A96 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		5F718F7C1F8E542B00E0DA7C /* FirebaseChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F718F7F1F8E542B00E0DA7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F718F811F8E542B00E0DA7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +124,10 @@
 			children = (
 				5F718F7F1F8E542B00E0DA7C /* AppDelegate.swift */,
 				5F718F811F8E542B00E0DA7C /* ViewController.swift */,
+				5F03090A1F8E631D002D3A96 /* Channel.swift */,
+				5F0309081F8E6147002D3A96 /* ChannelTableViewController.swift */,
+				5F03090C1F8E8670002D3A96 /* ChatViewController.swift */,
+				5F0309061F8E6111002D3A96 /* GoogleService-Info.plist */,
 				5F718F831F8E542B00E0DA7C /* Main.storyboard */,
 				5F718F861F8E542B00E0DA7C /* Assets.xcassets */,
 				5F718F881F8E542B00E0DA7C /* LaunchScreen.storyboard */,
@@ -282,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F718F8A1F8E542B00E0DA7C /* LaunchScreen.storyboard in Resources */,
+				5F0309071F8E6111002D3A96 /* GoogleService-Info.plist in Resources */,
 				5F718F871F8E542B00E0DA7C /* Assets.xcassets in Resources */,
 				5F718F851F8E542B00E0DA7C /* Main.storyboard in Resources */,
 			);
@@ -469,7 +482,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F718F821F8E542B00E0DA7C /* ViewController.swift in Sources */,
+				5F03090B1F8E631D002D3A96 /* Channel.swift in Sources */,
 				5F718F801F8E542B00E0DA7C /* AppDelegate.swift in Sources */,
+				5F03090D1F8E8670002D3A96 /* ChatViewController.swift in Sources */,
+				5F0309091F8E6147002D3A96 /* ChannelTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
