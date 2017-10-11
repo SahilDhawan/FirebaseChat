@@ -54,7 +54,6 @@ class ChannelTableViewController: UITableViewController {
         destination.channel = selectedChannel
         destination.firebaseRef = channelRef.child((selectedChannel?.id)!)
         destination.senderDisplayName = sendersName
-        
     }
     
     @IBAction func addNewChannel(sender : UIButton){
